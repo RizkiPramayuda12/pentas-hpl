@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="form">
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Masukan email anda"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Masukan password anda"
+        />
+      </div>
+      <div class="g-recaptcha" data-sitekey="6LdTMr0mAAAAACwCGKD1mflJ-k7Fc7CTPFiG0DhN"></div>
+
+      <!-- Sign In Button -->
+      <button id="submit-btn" onclick="signIn()">Sign In</button> 
+      <!-- Sign Up Button -->
+      <p>Belum punya akun?</p>
+      <a href="SignUp.htm">Sign Up</a>
+    </div>
+    <script src="data.js"></script>
+  </body>
+</html>
