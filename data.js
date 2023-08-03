@@ -20,7 +20,7 @@ const signIn = () => {
         .then((result) => { 
             // Signed in 
             console.log(result);
-            location.href = "../pentashpl-leaflet/index-leaflet.html";
+            location.href = "../pentas-hpl/pentashpl-leaflet/index-leaflet.html";
             alert ("Akun Anda Sudah Terdaftar Silakan Masuk");
         })
         .catch((error) => {
